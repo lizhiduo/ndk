@@ -1,0 +1,19 @@
+LOCAL_PATH:= $(call my-dir)
+
+include $(CLEAR_VARS)
+
+LOCAL_MODULE := libgetparam
+
+LOCAL_SRC_FILES := \
+	syno_getkey.c 
+	
+#LOCAL_C_INCLUDES += syno_getkey.h
+
+#LOCAL_CLFAGS = -fvisibility=hidden -Wall -Werror
+#LOCAL_CLFAGS = -Wl,--hash-style=sysv
+
+#LOCAL_SHARED_LIBRARIES := \
+	liblog \
+
+
+include $(BUILD_SHARED_LIBRARY)
